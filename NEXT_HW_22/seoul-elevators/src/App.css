@@ -1,0 +1,53 @@
+.app-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.app-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.district-select {
+    width: 300px;
+    margin: 0 auto 20px;
+}
+
+.stations-container {
+    margin-top: 20px;
+}
+
+.stations-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.stations-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.station-item {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.station-item:hover {
+    background-color: #0056b3;
+}
+
+.map-container {
+    margin-top: 20px;
+    height: 600px;
+    width: 100%;
+}
