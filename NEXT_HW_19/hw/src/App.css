@@ -1,0 +1,150 @@
+/* App.css */
+
+/* 전체 앱 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* 배경색 추가 */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto 0;
+    padding: 20px;
+    background-color: #fff; /* 배경색 추가 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    transition: transform 0.3s ease-in-out; /* 전환 효과 추가 */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* 마우스 호버 시 약간 위로 이동 */
+}
+
+/* 헤더 스타일 */
+h1.header {
+    font-size: 36px;
+    color: #333;
+    text-align: center; /* 가운데 정렬 추가 */
+    margin-bottom: 30px; /* 공간 추가 */
+    cursor: pointer; /* 마우스 커서 변경 */
+    transition: color 0.3s ease-in-out; /* 색상 전환 효과 추가 */
+}
+
+/* 무지개 색상을 정의합니다. */
+@keyframes rainbow {
+    0% {
+        color: #ff0000;
+    } /* 빨강 */
+    16.7% {
+        color: #ff7f00;
+    } /* 주황 */
+    33.3% {
+        color: #ffff00;
+    } /* 노랑 */
+    50% {
+        color: #00ff00;
+    } /* 초록 */
+    66.6% {
+        color: #0000ff;
+    } /* 파랑 */
+    83.3% {
+        color: #4b0082;
+    } /* 보라 */
+    100% {
+        color: #ff0000;
+    } /* 빨강 */
+}
+
+.header:hover {
+    animation: rainbow 2s infinite; /* 호버 시 2초 동안 무지개 애니메이션 재생 */
+}
+
+/* 투두리스트 스타일 */
+.todo-list {
+    margin-top: 20px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #f3f3f3; /* 리스트 배경색 추가 */
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    transition: background-color 0.3s ease-in-out; /* 배경색 전환 효과 추가 */
+}
+
+.todo-item:hover {
+    background-color: #e0e0e0; /* 호버 시 배경색 변경 */
+}
+
+.todo-item input[type='checkbox'] {
+    margin-right: 10px;
+}
+
+.todo-item span {
+    flex: 1;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+.todo-item button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* 배경색 전환 효과 추가 */
+}
+
+.todo-item button:hover {
+    background-color: #d32f2f; /* 호버 시 배경색 변경 */
+}
+
+/* 생성 폼 스타일 */
+.create-form {
+    margin-top: 20px;
+}
+
+.create-form input[type='text'],
+.create-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.create-form button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* 배경색 전환 효과 추가 */
+}
+
+.create-form button:hover {
+    background-color: #388e3c; /* 호버 시 배경색 변경 */
+}
+
+/* 아티클 스타일 */
+article {
+    margin-top: 20px;
+}
+
+article h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+article p {
+    font-size: 18px;
+    color: #666;
+}

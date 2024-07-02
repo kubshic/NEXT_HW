@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/path/to/pretendard.woff2') format('woff2'), url('/path/to/pretendard.woff') format('woff');
+}
+
+body {
+    font-family: 'pretendard', sans-serif;
+    font-size: 25px;
+}
+
+.content-text {
+    font-size: 40px;
+}
+
+.container {
+    background-color: black;
+    color: white;
+    width: 1080px;
+    height: 1920px;
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    /* justify-content: center;
+    align-items: */
+}
+
+.option {
+    margin-top: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: #888888;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.button {
+    font-size: 40px;
+    margin-right: 20px;
+}

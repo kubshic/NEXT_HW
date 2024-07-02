@@ -1,0 +1,21 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="{%static 'base.css'%}" />
+        {%block css%} {%endblock css%}
+        <title>Project</title>
+    </head>
+    <body>
+        <div>{%block title%} {%endblock title%}</div>
+        <div>{%block content%} {%endblock content%}</div>
+        <footer>
+            <p id="footer-title">송하영의 블로그</p>
+            <p id="contact">연락처</p>
+            <p>전화: +82-10-3293-6146</p>
+            <p>이메일: kubshic@korea.ac.kr</p>
+        </footer>
+    </body>
+</html>

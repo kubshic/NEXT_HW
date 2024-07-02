@@ -1,0 +1,217 @@
+.screen {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 3px;
+    width: 450px;
+    height: 800px;
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+}
+
+span {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#header {
+    display: flex;
+    margin: 20px;
+    width: 450px;
+}
+
+#arrow {
+    width: 50px;
+}
+
+#username {
+    width: 110px;
+    margin-top: -3px;
+    font-size: 18px;
+}
+
+#badgeBlock {
+    width: 250px;
+}
+
+#badge {
+    width: 15px;
+}
+
+#elVertical {
+    margin-right: 40px;
+}
+
+#info {
+    display: flex;
+    justify-content: space-around;
+}
+
+#profileImage {
+    width: 100px;
+}
+
+.dataArrange {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 23px;
+    width: 280px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number {
+    font-size: large;
+}
+
+.dataText {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: -5px;
+    left: 15px;
+}
+
+#name {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#firstLine {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#secondLine {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#link {
+    font-size: 15px;
+    font-weight: normal;
+    color: darkblue;
+}
+
+#mutual {
+    margin-top: 7px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+#emptyPic1 {
+    width: 28px;
+    height: 28px;
+    z-index: 2;
+}
+
+#emptyPic2 {
+    width: 28px;
+    height: 28px;
+    z-index: 1;
+    position: relative;
+    left: -15px;
+}
+
+#followedBy {
+    font-size: 12px;
+    font-weight: normal;
+    position: relative;
+    top: -10px;
+}
+
+#buttons {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+#follow {
+    background-color: #0b9df1;
+    color: #fff;
+    border: none;
+    width: 190px;
+    margin: 2.5px;
+    padding: 5px 5px;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#message {
+    background-color: #e7e7e7;
+    color: #000000;
+    border: none;
+    width: 190px;
+    margin: 2.5px;
+    padding: 5px 5px;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#userPlus {
+    background-color: #e7e7e7;
+    border: none;
+    width: 35px;
+    height: 35px;
+    margin: 2.5px;
+    padding: 2px 2px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#stories {
+    margin-top: 5px;
+    width: 450px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.menuIcon {
+    font-size: 120%;
+}
+
+#line {
+    width: 150px;
+    height: 10px;
+    background-color: black;
+}
+
+.posts {
+    display: flex;
+}
+
+.postImg {
+    width: 150px;
+}
+
+#lowerBar {
+    display: flex;
+    justify-content: space-around;
+    width: 450px;
+    height: 150px;
+    margin-top: 7px;
+}
+
+.lowerIcon {
+    font-size: 160%;
+    margin-top: -1px;
+}
+
+#emptyPic {
+    width: 33px;
+    height: 33px;
+}

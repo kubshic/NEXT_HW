@@ -1,0 +1,39 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="{% static 'new.css' %}" />
+        <title>New To-Do</title>
+    </head>
+    <body>
+        <div class="container">
+            <form action="" method="post">
+                {% csrf_token %}
+                <div>
+                    <h1><label for="title">제목</label></h1>
+                    <input type="text" name="title" class="input" id="title" placeholder="제목을 입력해주세요." />
+                </div>
+                <div>
+                    <h1><label for="content">내용</label></h1>
+                    <textarea
+                        name="content"
+                        class="input"
+                        id="content"
+                        cols="30"
+                        rows="10"
+                        placeholder="내용을 입력해주세요."
+                    ></textarea>
+                </div>
+                <div>
+                    <h1><label for="content">마감 기한</label></h1>
+                    <input type="date" class="input" id="deadline" name="deadline" placeholder="기한을 입력해주세요." />
+                </div>
+                <div class="option">
+                    <button id="submit" type="submit">작성하기</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

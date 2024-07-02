@@ -1,0 +1,37 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../static/new.css" />
+        <title>New Article</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h2>글 쓰기 페이지</h2>
+            </div>
+            <form action="/new/" method="post">
+                {% csrf_token %}
+                <div>
+                    <div class="sub-header">글 제목</div>
+                    <input type="text" name="title" />
+                </div>
+                <div>
+                    <div class="sub-header">글 내용</div>
+                    <textarea name="content" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <div class="sub-header">카테고리</div>
+                    <select name="category" id="select">
+                        {% for value, label in categories %}
+                        <option value="{{ value }}">{{ label }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <button type="submit">작성 완료</button>
+            </form>
+        </div>
+    </body>
+</html>

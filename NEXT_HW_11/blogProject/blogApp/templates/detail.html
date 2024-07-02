@@ -1,0 +1,54 @@
+{%extends 'base.html'%} {%block css%} {%load static%}
+<link rel="stylesheet" type="text/css" href="{%static 'detail.css'%}" />
+{%endblock%} {%block title%}
+<div class="header">
+    <h2>글 상세 페이지</h2>
+</div>
+{%endblock%} {%block content%}
+<div class="container">
+    <div class="block">
+        <h3>제목</h3>
+        <div>{{article.title}}</div>
+    </div>
+    <div class="block">
+        <h3>내용</h3>
+        <div>{{article.content}}</div>
+    </div>
+    <div class="block">
+        <p>작성 시간</p>
+        <div>{{article.time}}</div>
+    </div>
+    <div class="block">
+        <p>댓글</p>
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" id="comment-input" name="content" placeholder="댓글을 입력해주세요" />
+            <button type="submit">작성하기</button>
+        </form>
+        {% for comment in comments %}
+        <ul class="comments">
+            <li id="comment">
+                {{comment.content}} <a href="{% url 'delete_comment' article.id comment.id %}">삭제</a>
+            </li>
+        </ul>
+
+        {% for reply in comment.replies.all %}
+        <ul class="replies">
+            <li id="reply">{{reply.content}} <a href="{% url 'delete_comment' article.id reply.id %}">삭제</a></li>
+        </ul>
+        {% endfor %}
+        <form method="POST" id="reply-block">
+            {% csrf_token %}
+            <input type="text" id="reply-input" name="content" placeholder="대댓글을 입력해주세요" />
+            <input type="hidden" name="parent" value="{{comment.id}}" />
+            <button type="submit">작성하기</button>
+        </form>
+        {% endfor %}
+    </div>
+    <div class="bottom-block">
+        <a class="button" href="{%url 'list'%}">전체 목록으로 돌아가기</a>
+        <a class="button" href="{%url 'new'%}">새로운 글 쓰기</a>
+        <a class="button" href="{%url 'delete' article.id%}">삭제하기</a>
+    </div>
+</div>
+{%endblock%}

@@ -1,0 +1,61 @@
+body {
+    background-color: #222;
+}
+a:visited {
+    color: #222;
+}
+mark {
+    color: #222;
+    background: #f7941e;
+}
+li {
+    color: rgba(255, 255, 255, 1);
+}
+img {
+    width: 100%;
+}
+.container {
+    width: 90%; /* 창의 너비의 90%로 설정하여, 창의 크기에 비례하여 자동으로 조정됨 */
+    max-width: 1200px; /* 최대 너비 설정 */
+    color: white;
+    margin: 20px auto; /* 좌우 마진을 자동으로 조절하여 컨테이너를 가운데로 정렬 */
+    border: 1px solid #f7941e;
+    padding: 40px;
+    border-radius: 20px;
+    position: absolute; /* 절대 위치 설정 */
+    top: 50%; /* 화면의 수직 중앙 위치 설정 */
+    left: 50%; /* 화면의 수평 중앙 위치 설정 */
+    transform: translate(-50%, -50%); /* 컨테이너의 중심을 화면의 중앙으로 이동 */
+}
+#image {
+    max-width: 430px;
+
+    margin: 0 auto;
+}
+#oneSentence {
+    font-style: italic;
+}
+#bullet {
+    font-size: 18px;
+    text-align: center;
+}
+li {
+    text-align: left;
+    padding-left: 20px;
+}
+p {
+    font-size: 20px;
+    font-weight: 700;
+}
+span {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 5px 5px 8px rgba(255, 178, 12, 0.5);
+    padding: 20px;
+}
+b {
+    color: #f7941e;
+}
+h3 {
+    text-align: center;
+}

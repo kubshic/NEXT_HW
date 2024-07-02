@@ -1,0 +1,49 @@
+#navbar {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffc2d1;
+    /* width: 80%; */
+    margin: 10px;
+}
+
+#name {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.navbar__menu {
+    display: flex;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    padding: 0;
+    margin: 10px;
+}
+
+#footer-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#contact {
+    text-decoration: underline;
+}

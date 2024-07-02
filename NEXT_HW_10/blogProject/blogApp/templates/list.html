@@ -1,0 +1,44 @@
+{%extends 'base.html'%}
+
+{%block css%}
+{%load static%}
+<link rel="stylesheet" type="text/css" href="{%static 'list.css'%}">
+{%endblock%}
+
+{%block title%}
+<div class="header">
+    <h2>전체 글 목록</h2>
+</div>
+{%endblock%}
+
+{%block content%}
+
+<div class="container">
+    <div class="block">
+        
+            <ul class="menu">
+                {% for article in articles %}
+                <a href="{% url 'detail' article.id %}">
+                    <li>{{article.title}}</li>
+                {% endfor %}
+            </ul>
+        
+    </div>
+    <div class="block">
+        <div class="header">
+            <h2>카테고리 목록</h2>
+        </div>
+        <div class="block">
+            <ul class="menu">
+                {% for category_id, category_name, count in categories_with_counts %}
+                <a href="{% url 'category' category_id %}"></a>
+                    <li>{{category_name}} [ {{count}}개의 글 ]</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="bottom_block">
+        <a class="button" href="{% url 'new' %}">글 쓰러 가기</a>
+    </div>
+</div>
+{%endblock%}

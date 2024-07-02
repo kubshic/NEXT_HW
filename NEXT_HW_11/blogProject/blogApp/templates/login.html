@@ -1,0 +1,34 @@
+{%extends 'base.html'%} {%block css%} {%load static%}
+<link rel="stylesheet" type="text/css" href="{%static 'new.css'%}" />
+{%endblock%} {%block title%}
+<div class="header">
+    <h2>회원가입</h2>
+</div>
+{%endblock%} {%block content%}
+
+<div class="container">
+    <form method="post">
+        {% csrf_token %} {% csrf_token %}
+        <div>
+            {% if form.errors %}
+            <ul>
+                {% for field, error_list in form.errors.items %}
+                <li>{{ field }} : {{ error_list }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            <input type="text" name="username" placeholder="아이디" class="registration-input" />
+            <input type="password" name="password" placeholder="비밀번호" class="registration-input" />
+        </div>
+        <div>
+            <button type="submit">로그인</button>
+        </div>
+        {% comment %}
+        <div>
+            <a href="{% provider_login_url 'kakao'%}"><li>카카오 로그인</li></a>
+            <a href="{% provider_login_url 'google'%}"><li>구글 로그인</li></a>
+        </div>
+        {% endcomment %}
+    </form>
+</div>
+{%endblock%}

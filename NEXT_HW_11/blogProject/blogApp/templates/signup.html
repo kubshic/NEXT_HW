@@ -1,0 +1,27 @@
+{%extends 'base.html'%} {%block css%} {%load static%}
+<link rel="stylesheet" type="text/css" href="{%static 'new.css'%}" />
+{%endblock%} {%block title%}
+<div class="header">
+    <h2>회원가입</h2>
+</div>
+{%endblock%} {%block content%}
+
+<div class="container">
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            {% if form.errors %}
+            <ul>
+                {% for field, error_list in form.errors.items %} {% for error in error_list %}
+                <li>{{ error }}</li>
+                {% endfor %} {% endfor %}
+            </ul>
+            {% endif %} {{ form }}
+        </div>
+        <div>
+            <button type="submit">회원가입</button>
+            {% comment %} 구 id=post-button {% endcomment %}
+        </div>
+    </form>
+</div>
+{%endblock%}

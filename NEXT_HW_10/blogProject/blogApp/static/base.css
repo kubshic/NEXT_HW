@@ -1,0 +1,18 @@
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    padding: 0;
+    margin: 10px;
+}
+
+#footer-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#contact {
+    text-decoration: underline;
+}

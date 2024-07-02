@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: #fae8ed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffb2c5;
+    padding: 0;
+    width: 100%;
+}
+
+.block {
+    background-color: #ffa2b9;
+    padding: 0;
+    width: 100%;
+}
+
+.block h3 {
+    background-color: #ffa2b9; /* 제목 배경색 */
+    margin: 0; /* 추가 */
+    padding: 15px; /* 추가 */
+    border-radius: 20px 20px 0 0; /* 추가 */
+}
+.block > div {
+    background-color: white; /* 내부 div 배경색 */
+    border-radius: 0 0 0 0;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ffa2b9;
+    padding: 0;
+    /* margin-bottom: 10px; */
+}
+
+.button {
+    /* display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center; */
+    background-color: #ffa2b9;
+    padding: 15px;
+    color: white;
+}
+
+/* .bottom_block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc2d1;
+    width: 80%;
+    margin: 30px;
+} */

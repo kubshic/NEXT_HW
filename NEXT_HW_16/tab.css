@@ -1,0 +1,65 @@
+/* 전체 페이지 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* 배경색상 */
+    color: #fff; /* 텍스트 색상 */
+}
+
+/* header 스타일 */
+.header {
+    background-color: #ff3c00; /* 주황색 배너 배경색 */
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* banner 스타일 */
+.banner {
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    height: 150px;
+}
+
+/* title 스타일 */
+.title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* subtitle 스타일 */
+.subtitle {
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+/* menu 스타일 */
+.menu {
+    display: flex;
+    justify-content: space-between; /* 버튼 간격을 동일하게 분배 */
+    margin-top: 20px;
+    padding: 0; /* 내부 여백 제거 */
+    margin-bottom: 0;
+}
+
+/* menu 버튼 스타일 */
+.menu button {
+    flex: 1; /* 모든 버튼이 동일한 너비를 가지도록 설정 */
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* 메뉴 탭 누를 때 스타일 */
+.menu button.active {
+    background-color: #ff3c00; /* 누를 때 배경색 */
+}
+
+/* 마우스 hover 시 스타일 */
+.menu button:hover {
+    background-color: #666; /* hover 시 배경색 */
+}
